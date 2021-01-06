@@ -34,7 +34,7 @@ spec:
         - "1"
       containers:
       - name: podinfod
-        image: asinghtruefit/podinfo:3.1.8
+        image: asinghtruefit/podinfo:3.1.9
       imagePullSecrets:
       - name: regcred
         imagePullPolicy: IfNotPresent
