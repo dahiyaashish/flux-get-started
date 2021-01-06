@@ -35,8 +35,6 @@ spec:
       containers:
       - name: podinfod
         image: asinghtruefit/podinfo:3.1.9
-      imagePullSecrets:
-      - name: regcred
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
@@ -75,3 +73,5 @@ spec:
           requests:
             cpu: 10m
             memory: 64Mi
+      imagePullSecrets:
+      - name: regcred
